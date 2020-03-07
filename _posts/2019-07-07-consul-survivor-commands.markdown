@@ -10,40 +10,40 @@ categories: consul
 ### Listing members
 
 {% highlight shell %}
-    $ consul members
-    $ consul members -detailed
-    $ curl http://consul.your-awesome-domain.com:8500/v1/catalog/nodes | jq
+$ consul members
+$ consul members -detailed
+$ curl http://consul.your-awesome-domain.com:8500/v1/catalog/nodes | jq
 {% endhighlight %}
 
 ### Listing server cluster
 
 {% highlight shell %}
-    $ consul members | grep -i server
+$ consul members | grep -i server
 {% endhighlight %}
 
 ### Join cluster
 
 {% highlight shell %}
-    $ consul join <ip>
+$ consul join <ip>
 {% endhighlight %}
 
 ### Reload
 
 {% highlight shell %}
-    $ consul reload
+$ consul reload
 {% endhighlight %}
 
 ### Checking health state
 
 {% highlight shell %}
-    $ curl http://consul.your-awesome-domain.com:8500/v1/health/state/critical | jq
-    $ curl http://127.0.0.1:8500/v1/operator/autopilot/health | jq
+$ curl http://consul.your-awesome-domain.com:8500/v1/health/state/critical | jq
+$ curl http://127.0.0.1:8500/v1/operator/autopilot/health | jq
 {% endhighlight %}
 
 ###  Listing raft peers
 
 {% highlight shell %}
-    $ consul operator raft list-peers
+$ consul operator raft list-peers
 {% endhighlight %}
 
 ## Some external utils documentation

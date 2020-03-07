@@ -13,26 +13,26 @@ These parameters are passed to the ansible binary for invocation.
 
 # Running ad-hoc commands
 
-## ping all hosts
+### ping all hosts
 
 {% highlight shell %}
-    ansible all -m ping
+ansible all -m ping
 {% endhighlight %}
 
 ### execute the command "uptime" on all hosts
 
 {% highlight shell %}
-    ansible all -m shell -a 'uptime'
+ansible all -m shell -a 'uptime'
 {% endhighlight %}
 
 ### run the command disk usage using the inventory json file on all hosts
 
 {% highlight shell %}
-    ansible all -i inventory.json -m shell -a 'df -h'
+ansible all -i inventory.json -m shell -a 'df -h'
 {% endhighlight %}
 
 ### install the package git as root user on the target host using the inventory.yml file
 
 {% highlight shell %}
-    ansible test-db-001.mydomain.com -i inventory.yml -b -m package -a "name=git state=present"
+ansible test-db-001.mydomain.com -i inventory.yml -b -m package -a "name=git state=present"
 {% endhighlight %}

@@ -24,7 +24,7 @@ categories: ansible inventory azure_rm microsoft azure
 ### Install azure inventory plugin
 
 {% highlight shell %}
-    pip install 'ansible[azure]'
+pip install 'ansible[azure]'
 {% endhighlight %}
 
 ### Setup
@@ -32,13 +32,13 @@ categories: ansible inventory azure_rm microsoft azure
 Create a new file called azure_rm.yml
 
 {% highlight yaml %}
-    ---
-    plugin: azure_rm
-    auth_source: auto
-     
-    # Include VMSS.
-    include_vmss_resource_groups:
-      - '*'
+---
+plugin: azure_rm
+auth_source: auto
+ 
+# Include VMSS.
+include_vmss_resource_groups:
+  - '*'
 {% endhighlight %}
 
 ### Setup Azure subscription settings
@@ -46,8 +46,8 @@ Create a new file called azure_rm.yml
 **Azure cli**
 
 {% highlight shell %}
-    az login
-    az account set --subscription <subscription_name>
+az login
+az account set --subscription <subscription_name>
 {% endhighlight %}
 
 ### Invoking ansible cli.
@@ -55,13 +55,13 @@ Create a new file called azure_rm.yml
 **Listing all hosts**
 
 {% highlight shell %}
-    ansible-inventory -i azure_rm.yml --list all
+ansible-inventory -i azure_rm.yml --list all
 {% endhighlight %}
 
 **Pinging**
 
 {% highlight shell %}
-    ansible all -m ping -i azure_rm.yml -u <ansible_user> --key-file "<ansible_user_ssh_key_file>"
+ansible all -m ping -i azure_rm.yml -u <ansible_user> --key-file "<ansible_user_ssh_key_file>"
 {% endhighlight %}
 
 If you did not get any error, it's working properly.

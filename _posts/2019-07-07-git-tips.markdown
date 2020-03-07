@@ -10,62 +10,62 @@ categories: git
 ### clone repository
 
 {% highlight shell %}
-    git clone
+git clone
 {% endhighlight %}
 
 ### update repository
 
 {% highlight shell %}
-    git pull
+git pull
 {% endhighlight %}
 
 ### add file
 
 {% highlight shell %}
-    git add <file>
+git add <file>
 {% endhighlight %}
 
 ### remove file
 
 {% highlight shell %}
-    git rm <file>
+git rm <file>
 {% endhighlight %}
 
 ### list branch
 
 {% highlight shell %}
-    git branch
+git branch
 {% endhighlight %}
 
 ### change the repository
 
 {% highlight shell %}
-    git checkout <repository>
+git checkout <repository>
 {% endhighlight %}
 
 ### commit
 
 {% highlight shell %}
-    git commit -m "description" <file>
-    git status
-    git push
+git commit -m "description" <file>
+git status
+git push
 {% endhighlight %}
 
 ### git logs
 
 {% highlight shell %}
-    git log --decorate=short
+git log --decorate=short
 {% endhighlight %}
 
 ### git logs
 
 {% highlight shell %}
-    git log --oneline
+git log --oneline
 {% endhighlight %}
 
 ### new branch
 
 {% highlight shell %}
-    git checkout -b patch1
-    git push origin patch1
+git checkout -b patch1
+git push origin patch1
 {% endhighlight %}

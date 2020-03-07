@@ -10,28 +10,28 @@ Sometimes we have to do some troubleshooting inside our database environment suc
 ### Getting the current settings:
 
 {% highlight shell %}
-    MariaDB [(none)]> show global variables like 'max_connections';
-    +-----------------+-------+
-    | Variable_name | Value |
-    +-----------------+-------+
-    | max_connections | 200 |
-    +-----------------+-------+
-    1 row in set (0.00 sec)
+MariaDB [(none)]> show global variables like 'max_connections';
++-----------------+-------+
+| Variable_name | Value |
++-----------------+-------+
+| max_connections | 200 |
++-----------------+-------+
+1 row in set (0.00 sec)
 {% endhighlight %}
 
 {% highlight shell %}
-    MariaDB [(none)]> show global variables like 'thread_pool_max_threads';
-    +-------------------------+-------+
-    | Variable_name | Value |
-    +-------------------------+-------+
-    | thread_pool_max_threads | 200 |
-    +-------------------------+-------+
-    1 row in set (0.00 sec)
+MariaDB [(none)]> show global variables like 'thread_pool_max_threads';
++-------------------------+-------+
+| Variable_name | Value |
++-------------------------+-------+
+| thread_pool_max_threads | 200 |
++-------------------------+-------+
+1 row in set (0.00 sec)
 {% endhighlight %}
 
 ### Checking the current status:
 
 {% highlight shell %}
-    show status where `variable_name` = 'Max_used_connections';
-    show status where `variable_name` = 'Threads_connected';
+show status where `variable_name` = 'Max_used_connections';
+show status where `variable_name` = 'Threads_connected';
 {% endhighlight %}
