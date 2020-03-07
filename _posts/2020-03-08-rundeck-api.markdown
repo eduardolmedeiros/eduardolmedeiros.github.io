@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rundeck: how to manage the api
+title: Rundeck: managing the api
 date: '2020-03-08 00:39:00'
 categories: rundeck api
 ---
