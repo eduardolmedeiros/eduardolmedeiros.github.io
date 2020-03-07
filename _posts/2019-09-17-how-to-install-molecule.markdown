@@ -20,70 +20,54 @@ Use pip to install the virtualenv Python module:This will ensure that your packa
 
 We will use pip to create a virtual environment and install additional packages.
 
-<!--kg-card-begin: markdown-->
-
-    python3 -m pip install virtualenv
-
-<!--kg-card-end: markdown-->
+{% highlight shell %}
+python3 -m pip install virtualenv
+{% endhighlight %}
 
 Next, let's create and activate the virtual environment:
 
-<!--kg-card-begin: markdown-->
-
-    python3 -m virtualenv molecule
-
-<!--kg-card-end: markdown-->
+{% highlight shell %}
+python3 -m virtualenv molecule
+{% endhighlight %}
 
 Activate it to ensure that your actions are restricted to that environment:
 
-<!--kg-card-begin: markdown-->
-
-    source molecule/bin/activate
-
-<!--kg-card-end: markdown-->
+{% highlight shell %}
+source molecule/bin/activate
+{% endhighlight %}
 
 Install molecule and docker using pip:
 
-<!--kg-card-begin: markdown-->
+{% highlight shell %}
+python3 -m pip install molecule docker
+{% endhighlight %}
 
-    python3 -m pip install molecule docker
-
-<!--kg-card-end: markdown-->
 ### python 2
 
 Use pip to install the virtualenv Python module. This will ensure that your package repository includes the latest version of the python-pip package, which will install pip and Python 2.7.
 
 We will use pip to create a virtual environment and install additional packages.
 
-<!--kg-card-begin: markdown-->
-
-    python -m pip install virtualenv
-
-<!--kg-card-end: markdown-->
+{% highlight shell %}
+python -m pip install virtualenv
+{% endhighlight %}
 
 Next, let's create and activate the virtual environment:
 
-<!--kg-card-begin: markdown-->
-
-    python -m virtualenv molecule
-
-<!--kg-card-end: markdown-->
+{% highlight shell %}
+python -m virtualenv molecule
+{% endhighlight %}
 
 Activate it to ensure that your actions are restricted to that environment:
 
-<!--kg-card-begin: markdown-->
-
-    source molecule/bin/activate
-
-<!--kg-card-end: markdown-->
+{% highlight shell %}
+source molecule/bin/activate
+{% endhighlight %}
 
 Install molecule and docker using pip:
 
-<!--kg-card-begin: markdown-->
-
-    python -m pip install molecule docker
-
-<!--kg-card-end: markdown-->
+{% highlight shell %}
+python -m pip install molecule docker
+{% endhighlight %}
 
 Next post I will explain how molecule works.
-
