@@ -5,11 +5,8 @@ date: '2019-09-17 19:36:51'
 categories: ansible automation molecule
 ---
 
-> Molecule is designed to aid in the development and testing of Ansible roles.
-
-> Molecule provides support for testing with multiple instances, operating systems and distributions, virtualization providers, test frameworks and testing scenarios.
-
-> Molecule encourages an approach that results in consistently developed roles that are well-written, easily understood and maintained.
+Molecule is designed to aid in the development and testing of Ansible roles.
+Molecule provides support for testing with multiple instances, operating systems and distributions, virtualization providers, test frameworks and testing scenarios.
 
 There are several ways to install molecule, for instance using package manager like yum, apt and brew, however we gonna coverage only one method which is pip.
 

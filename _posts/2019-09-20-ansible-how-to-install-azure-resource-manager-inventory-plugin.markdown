@@ -7,7 +7,7 @@ categories: ansible inventory azure_rm microsoft azure
 
 ### Introduction
 
-> This plugin allows you to work with dynamic inventory on Azure.
+This plugin allows you to work with dynamic inventory on Azure.
 
 ### Features  
 

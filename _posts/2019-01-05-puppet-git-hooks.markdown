@@ -5,7 +5,7 @@ date: '2019-01-05 19:51:58'
 categories: puppet git hooks
 ---
 
-> [Puppet git hooks](http://https://github.com/drwahl/puppet-git-hooks/) is a tool that helps and guide you during the development of puppet modules.
+[Puppet git hooks](http://https://github.com/drwahl/puppet-git-hooks/) is a tool that helps and guide you during the development of puppet modules.
 
 Basically, it allows you to do a lot of tests and validations of your code before to commit to your git repository.
 

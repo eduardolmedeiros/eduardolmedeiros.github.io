@@ -5,7 +5,7 @@ date: '2019-07-07 12:49:49'
 categories: consul
 ---
 
-> Consul is a service mesh solution providing a full featured control plane with service discovery, configuration, and segmentation functionality.
+Consul is a service mesh solution providing a full featured control plane with service discovery, configuration, and segmentation functionality.
 
 ### Listing members
 

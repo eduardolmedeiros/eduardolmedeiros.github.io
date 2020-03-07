@@ -5,7 +5,7 @@ date: '2019-01-05 18:50:18'
 categories: ansible
 ---
 
-> Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.
+Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.
 
 ### Highlights
 

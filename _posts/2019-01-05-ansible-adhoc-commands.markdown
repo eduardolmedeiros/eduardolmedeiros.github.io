@@ -5,7 +5,7 @@ date: '2019-01-05 19:36:47'
 categories: ansible
 ---
 
-> Ad-hoc commands in Ansible allow you to execute simple tasks at the command line against one or all of your hosts.
+Ad-hoc commands in Ansible allow you to execute simple tasks at the command line against one or all of your hosts.
 
 An ad-hoc command consists of two parameters: the **host group** that defines on what machines to run the task against and the Ansible **module** to run.
 

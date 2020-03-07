@@ -5,7 +5,7 @@ date: '2019-01-05 19:02:24'
 categories: ansible
 ---
 
-> Inventory is a list of servers that Ansible uses to manage the resources.
+Inventory is a list of servers that Ansible uses to manage the resources.
 
 There are two different type of inventories:
 
