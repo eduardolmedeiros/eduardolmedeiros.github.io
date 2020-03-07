@@ -24,9 +24,9 @@ There are many ways to setup the inventory file on your controller machine.
 ### Inventory file location
 
 ```
-| level | path | note |
-| ---   | --- | --- |
-| root  | /etc/ansible/hosts | |
+| level | path                 | note        |
+| ----- | -------------------- | ----------- |
+| root  | /etc/ansible/hosts   |             |
 | user  | $USER/.ansible/hosts | recommended |
 ```
 
@@ -39,10 +39,10 @@ Ansible support many formats, below we gonna show three (INI,YAML and JSON).
 For this example, we gonna create two groups with two hosts inside in each.
 
 ```
-| group | hosts |
-| ---   | ---   |
+| group     | hosts                                                |
+| --------- | ---------------------------------------------------- |
 | webserver | test-web-001.mydomain.com, test-web-002.mydomain.com |
-| database  | test-db-001.mydomain.com, test-db-002.mydomain.com |
+| database  | test-db-001.mydomain.com, test-db-002.mydomain.com   |
 ```
 
 ### INI format
