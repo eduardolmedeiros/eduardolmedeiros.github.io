@@ -1,0 +1,71 @@
+---
+layout: post
+title: git tips
+date: '2019-07-07 12:38:43'
+categories: git
+---
+
+> Git is a distributed version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+
+### clone repository
+
+{% highlight shell %}
+    git clone
+{% endhighlight %}
+
+### update repository
+
+{% highlight shell %}
+    git pull
+{% endhighlight %}
+
+### add file
+
+{% highlight shell %}
+    git add <file>
+{% endhighlight %}
+
+### remove file
+
+{% highlight shell %}
+    git rm <file>
+{% endhighlight %}
+
+### list branch
+
+{% highlight shell %}
+    git branch
+{% endhighlight %}
+
+### change the repository
+
+{% highlight shell %}
+    git checkout <repository>
+{% endhighlight %}
+
+### commit
+
+{% highlight shell %}
+    git commit -m "description" <file>
+    git status
+    git push
+{% endhighlight %}
+
+### git logs
+
+{% highlight shell %}
+    git log --decorate=short
+{% endhighlight %}
+
+### git logs
+
+{% highlight shell %}
+    git log --oneline
+{% endhighlight %}
+
+### new branch
+
+{% highlight shell %}
+    git checkout -b patch1
+    git push origin patch1
+{% endhighlight %}
