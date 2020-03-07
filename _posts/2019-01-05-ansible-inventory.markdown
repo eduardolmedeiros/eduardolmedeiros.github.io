@@ -36,13 +36,15 @@ Ansible support many formats, below we gonna show three (INI,YAML and JSON).
 
 For this example, we gonna create two groups with two hosts inside in each.
 
+{% highlight %}
 | group | hosts |
 | --- | --- |
 | webserver | test-web-001.mydomain.com, test-web-002.mydomain.com |
 | database | test-db-001.mydomain.com, test-db-002.mydomain.com |
+{% endhighlight %}
 
 ### INI format
-
+{% highlight %}
     [webserver]
     test-web-001.mydomain.com
     test-web-002.mydomain.com
@@ -50,12 +52,13 @@ For this example, we gonna create two groups with two hosts inside in each.
     [database]
     test-db-001.mydomain.com
     test-db-002.mydomain.com
+{% endhighlight %}
 
 ### YAML format
-
-    ---
-    all:
-      children:
+{% highlight yaml %}
+---
+all:
+    children:
         webserver:
           hosts:
             test-web-001.mydomain.com:
@@ -64,32 +67,38 @@ For this example, we gonna create two groups with two hosts inside in each.
           hosts:
             test-db-001.mydomain.com:
             test-db-002.mydomain.com:
+{% endhighlight %}
 
 ### JSON format
-
-    {
-        "all": {
-            "children": {
-                "webserver": {
-                    "hosts": {
-                        "test-web-001.mydomain.com": null,
-                        "test-web-002.mydomain.com": null
-                    }
-                },
-                "database": {
-                    "hosts": {
-                        "test-db-001.mydomain.com": null,
-                        "test-db-002.mydomain.com": null
-                    }
+{% highlight json %}
+{
+    "all": {
+        "children": {
+            "webserver": {
+                "hosts": {
+                    "test-web-001.mydomain.com": null,
+                    "test-web-002.mydomain.com": null
+                }
+            },
+            "database": {
+                "hosts": {
+                    "test-db-001.mydomain.com": null,
+                    "test-db-002.mydomain.com": null
                 }
             }
         }
     }
+}
+{% endhighlight %}
 
 ### Listing the Inventory
 
-    $ ansible-inventory --inventory-file=[inventory_file] --list
+{% highlight shell %}
+$ ansible-inventory --inventory-file=[inventory_file] --list
+{% endhighlight %}
 
 ### Listing the Inventory and filter by a specific host
 
-    $ ansible-inventory --inventory-file=[inventory_file] --host [hostname]
+{% highlight shell %}
+$ ansible-inventory --inventory-file=[inventory_file] --host [hostname]
+{% endhighlight %}
