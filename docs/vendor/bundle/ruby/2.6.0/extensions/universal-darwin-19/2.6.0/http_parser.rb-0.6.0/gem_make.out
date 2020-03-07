@@ -1,17 +1,17 @@
-current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/blog/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200307-47902-13ahvde.rb extconf.rb
+current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/docs/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20200307-52871-yh3432.rb extconf.rb
 creating Makefile
 
-current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/blog/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/docs/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR=" clean
 
-current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/blog/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/docs/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR="
 compiling ruby_http_parser.c
 compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.bundle
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.Internal.sdk/usr/local/lib'
 
-current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/blog/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+current directory: /Users/medeiros/src/github/eduardolmedeiros/blog/docs/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20200307-47902-16u27kp
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20200307-52871-i8l9en
