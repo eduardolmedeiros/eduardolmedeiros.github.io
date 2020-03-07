@@ -25,21 +25,21 @@ $ apt-get install iperf
 {% highlight shell %}
 $ ip m s
 1:	lo
-inet 224.0.0.1
-inet6 ff02::1
-inet6 ff01::1
+    inet 224.0.0.1
+    inet6 ff02::1
+    inet6 ff01::1
 2:	eth0
-link 33:33:00:00:00:01
-link 01:00:5e:00:00:01
-link 33:33:ff:ec:54:83
-link 33:33:00:00:02:02
-link 01:00:5e:00:05:f1
-inet 230.0.5.241 <=
-inet 224.0.0.1 <=
-inet6 ff02::202
-inet6 ff02::1:ffec:5483
-inet6 ff02::1
-inet6 ff01::1
+    link 33:33:00:00:00:01
+    link 01:00:5e:00:00:01
+    link 33:33:ff:ec:54:83
+    link 33:33:00:00:02:02
+    link 01:00:5e:00:05:f1
+    inet 230.0.5.241 <=
+    inet 224.0.0.1 <=
+    inet6 ff02::202
+    inet6 ff02::1:ffec:5483
+    inet6 ff02::1
+    inet6 ff01::1
 {% endhighlight %}
 
 1. Setup the iperf to use multicast ip 230.0.5.241, UDP and port 48000 on server1.
