@@ -20,27 +20,27 @@ Use pip to install the virtualenv Python module:This will ensure that your packa
 
 We will use pip to create a virtual environment and install additional packages.
 
-{% highlight shell %}
+```shell
 python3 -m pip install virtualenv
-{% endhighlight %}
+```
 
 Next, let's create and activate the virtual environment:
 
-{% highlight shell %}
+```shell
 python3 -m virtualenv molecule
-{% endhighlight %}
+```
 
 Activate it to ensure that your actions are restricted to that environment:
 
-{% highlight shell %}
+```shell
 source molecule/bin/activate
-{% endhighlight %}
+```
 
 Install molecule and docker using pip:
 
-{% highlight shell %}
+```shell
 python3 -m pip install molecule docker
-{% endhighlight %}
+```
 
 ### python 2
 
@@ -48,26 +48,26 @@ Use pip to install the virtualenv Python module. This will ensure that your pack
 
 We will use pip to create a virtual environment and install additional packages.
 
-{% highlight shell %}
+```shell
 python -m pip install virtualenv
-{% endhighlight %}
+```
 
 Next, let's create and activate the virtual environment:
 
-{% highlight shell %}
+```shell
 python -m virtualenv molecule
-{% endhighlight %}
+```
 
 Activate it to ensure that your actions are restricted to that environment:
 
-{% highlight shell %}
+```shell
 source molecule/bin/activate
-{% endhighlight %}
+```
 
 Install molecule and docker using pip:
 
-{% highlight shell %}
+```shell
 python -m pip install molecule docker
-{% endhighlight %}
+```
 
 Next post I will explain how molecule works.

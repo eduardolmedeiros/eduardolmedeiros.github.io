@@ -9,63 +9,63 @@ Git is a distributed version-control system for tracking changes in source code 
 
 ### clone repository
 
-{% highlight shell %}
+```shell
 git clone
-{% endhighlight %}
+```
 
 ### update repository
 
-{% highlight shell %}
+```shell
 git pull
-{% endhighlight %}
+```
 
 ### add file
 
-{% highlight shell %}
+```shell
 git add <file>
-{% endhighlight %}
+```
 
 ### remove file
 
-{% highlight shell %}
+```shell
 git rm <file>
-{% endhighlight %}
+```
 
 ### list branch
 
-{% highlight shell %}
+```shell
 git branch
-{% endhighlight %}
+```
 
 ### change the repository
 
-{% highlight shell %}
+```shell
 git checkout <repository>
-{% endhighlight %}
+```
 
 ### commit
 
-{% highlight shell %}
+```shell
 git commit -m "description" <file>
 git status
 git push
-{% endhighlight %}
+```
 
 ### git logs
 
-{% highlight shell %}
+```shell
 git log --decorate=short
-{% endhighlight %}
+```
 
 ### git logs
 
-{% highlight shell %}
+```shell
 git log --oneline
-{% endhighlight %}
+```
 
 ### new branch
 
-{% highlight shell %}
+```shell
 git checkout -b patch1
 git push origin patch1
-{% endhighlight %}
+```

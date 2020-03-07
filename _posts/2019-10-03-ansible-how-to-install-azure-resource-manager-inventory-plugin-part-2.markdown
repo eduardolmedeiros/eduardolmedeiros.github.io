@@ -9,7 +9,7 @@ Continuing the ARM inventory plugin post. Follow below some useful settings to h
 
 ### Working with group conditional
 
-{% highlight yaml %}
+```yaml
 conditional_groups:
   # since this will be true for every host, every host sourced from this inventory plugin config will be in the
   # group 'all'
@@ -20,11 +20,11 @@ conditional_groups:
   preprod: "'preprod' in name"
   # if the VM's "name" variable contains "prod", it will be placed in the 'prod' group.
   prod: "'prod' in name"
-{% endhighlight %}
+```
 
 ### Working with tag conditional
 
-{% highlight yaml %}
+```yaml
 # places hosts in dynamically-created groups based on a variable value.
 keyed_groups:
 # places each host in a group named 'tag_(tag name)_(tag value)' for each tag on a VM.
@@ -32,26 +32,26 @@ keyed_groups:
   key: "location"
 - prefix: "flavor"
   key: tags.flavor | default('none')
-{% endhighlight %}
+```
 
 ### Fetches VMs from an explicit list of resource groups instead of default all
 
-{% highlight yaml %}
+```yaml
 include_vm_resource_groups:
 - myrg1
 - myrg2
-{% endhighlight %}
+```
 
 ### Disabling instances in shutoff state.
 
-{% highlight yaml %}
+```yaml
 # excludes hosts that are powered off
 - powerstate != 'running'
-{% endhighlight %}
+```
 
 ### Excluding hosts
 
-{% highlight yaml %}
+```yaml
 # excludes hosts in the eastus region
 - location in ['east']
-{% endhighlight %}
+```

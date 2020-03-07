@@ -72,7 +72,7 @@ all:
 ```
 
 ### JSON format
-{% highlight json %}
+```json
 {
     "all": {
         "children": {
@@ -91,16 +91,16 @@ all:
         }
     }
 }
-{% endhighlight %}
+```
 
 ### Listing the Inventory
 
-{% highlight shell %}
+```shell
 $ ansible-inventory --inventory-file=[inventory_file] --list
-{% endhighlight %}
+```
 
 ### Listing the Inventory and filter by a specific host
 
-{% highlight shell %}
+```shell
 $ ansible-inventory --inventory-file=[inventory_file] --host [hostname]
-{% endhighlight %}
+```

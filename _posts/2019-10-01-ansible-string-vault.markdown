@@ -12,18 +12,18 @@ into a format that can be included in ansible-playbook YAML files.
 
 ## Passing vault key file.
 
-{% highlight shell %}
+```shell
 ansible-vault encrypt_string --vault-password-file=.vault --name 'some_easy_label' ‘secret’
-{% endhighlight %}
+```
 
 ## Without vault key file.
 
-{% highlight shell %}
+```shell
 ansible-vault encrypt_string --name 'some_easy_label' 'secret'
-{% endhighlight %}
+```
 
 ## As input (copy/paste)
 
-{% highlight shell %}
+```shell
 ansible-vault encrypt_string --name 'some_easy_label'
-{% endhighlight %}
+```

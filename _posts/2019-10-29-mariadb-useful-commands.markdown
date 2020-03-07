@@ -7,18 +7,18 @@ categories: mariadb db mysql
 
 ### Checking current max connections.
 
-{% highlight sql %}
+```sql
 show status where `variable_name` = 'Max_used_connections';
-{% endhighlight %}
+```
 
 ### Checking threads connect
 
-{% highlight sql %}
+```sql
 show status where `variable_name` = 'Threads_connected';
-{% endhighlight %}
+```
 
 ### Checking current process
 
-{% highlight sql %}
+```sql
 show full processlist;
-{% endhighlight %}
+```

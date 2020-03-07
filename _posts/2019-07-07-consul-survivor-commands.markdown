@@ -9,42 +9,42 @@ Consul is a service mesh solution providing a full featured control plane with s
 
 ### Listing members
 
-{% highlight shell %}
+```shell
 $ consul members
 $ consul members -detailed
 $ curl http://consul.your-awesome-domain.com:8500/v1/catalog/nodes | jq
-{% endhighlight %}
+```
 
 ### Listing server cluster
 
-{% highlight shell %}
+```shell
 $ consul members | grep -i server
-{% endhighlight %}
+```
 
 ### Join cluster
 
-{% highlight shell %}
+```shell
 $ consul join <ip>
-{% endhighlight %}
+```
 
 ### Reload
 
-{% highlight shell %}
+```shell
 $ consul reload
-{% endhighlight %}
+```
 
 ### Checking health state
 
-{% highlight shell %}
+```shell
 $ curl http://consul.your-awesome-domain.com:8500/v1/health/state/critical | jq
 $ curl http://127.0.0.1:8500/v1/operator/autopilot/health | jq
-{% endhighlight %}
+```
 
 ###  Listing raft peers
 
-{% highlight shell %}
+```shell
 $ consul operator raft list-peers
-{% endhighlight %}
+```
 
 ## Some external utils documentation
 

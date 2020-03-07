@@ -15,24 +15,24 @@ These parameters are passed to the ansible binary for invocation.
 
 ### ping all hosts
 
-{% highlight shell %}
+```shell
 ansible all -m ping
-{% endhighlight %}
+```
 
 ### execute the command "uptime" on all hosts
 
-{% highlight shell %}
+```shell
 ansible all -m shell -a 'uptime'
-{% endhighlight %}
+```
 
 ### run the command disk usage using the inventory json file on all hosts
 
-{% highlight shell %}
+```shell
 ansible all -i inventory.json -m shell -a 'df -h'
-{% endhighlight %}
+```
 
 ### install the package git as root user on the target host using the inventory.yml file
 
-{% highlight shell %}
+```shell
 ansible test-db-001.mydomain.com -i inventory.yml -b -m package -a "name=git state=present"
-{% endhighlight %}
+```

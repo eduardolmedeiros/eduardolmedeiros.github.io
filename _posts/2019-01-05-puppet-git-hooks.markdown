@@ -23,9 +23,9 @@ Usage
 
 In your git repository you can symlink the pre-commit file from this repository to the .git/hooks/pre-commit of your repository you want to implement this feature.
 
-{% highlight shell %}
+```shell
 $ ln -s /path/to/this/repo/puppet-git-hooks/pre-commit .git/hooks/pre-commit
-{% endhighlight %}
+```
 
 For more details, please have a look on the [Puppet git hooks](http://https://github.com/drwahl/puppet-git-hooks/) .
 

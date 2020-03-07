@@ -11,7 +11,7 @@ There is a great project called [kubectx](https://github.com/ahmetb/kubectx) tha
 
 **kubectx** helps you switch between clusters back and forth and **kubens** helps you switch between Kubernetes namespaces smoothly.
 
-{% highlight shell %}
+```shell
 $ kubectx minikube
 Switched to context "minikube".
 
@@ -24,7 +24,7 @@ Switched to context "minikube".
 $ kubectx dublin=gke_ahmetb_europe-west1-b_dublin
 Context "dublin" set.
 Aliased "gke_ahmetb_europe-west1-b_dublin" as "dublin".
-{% endhighlight %}
+```
 
 
 Serious, this is such great tool!  

@@ -21,6 +21,7 @@ categories: ansible automation molecule
 
 Sample file with systemd suppport and port 8080 exposed.
 
+```yaml
     ---
     dependency:
       name: galaxy
@@ -56,11 +57,13 @@ Sample file with systemd suppport and port 8080 exposed.
         PYTHONWARNINGS: "ignore:.*U.*mode is deprecated:DeprecationWarning"
       lint:
         name: flake8
+```
 
 ### Vagrant (molecule.yml)
 
 Sample file for Vagrant with port 8080 exposed.
 
+```yaml
     ---
     dependency:
       name: galaxy
@@ -89,4 +92,4 @@ Sample file for Vagrant with port 8080 exposed.
         PYTHONWARNINGS: "ignore:.*U.*mode is deprecated:DeprecationWarning"
       lint:
         name: flake8
-
+```

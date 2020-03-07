@@ -15,14 +15,14 @@ For this setup, let's imagine that I have an application clusterized running on 
 
 1. Install iperf package in all machines.
 
-{% highlight shell %}
+```shell
 $ yum install iperf
 $ apt-get install iperf
-{% endhighlight %}
+```
 
 1. Check the multicast ip interface in all machines.
 
-{% highlight shell %}
+```shell
 $ ip m s
 1:	lo
     inet 224.0.0.1
@@ -40,25 +40,25 @@ $ ip m s
     inet6 ff02::1:ffec:5483
     inet6 ff02::1
     inet6 ff01::1
-{% endhighlight %}
+```
 
 1. Setup the iperf to use multicast ip 230.0.5.241, UDP and port 48000 on server1.
 
-{% highlight shell %}
+```shell
 $ iperf -s -u -B 230.0.5.241 -p 48000 -i 1
-{% endhighlight %}
+```
 
 1. Now let's start iperf on server 2.
 
-{% highlight shell %}
+```shell
 $ iperf -c 230.0.5.241 -u -T 32 -t 3 -p 48000 -i 1
-{% endhighlight %}
+```
 
 1. Checking the output.
 
 **server 1:**
 
-{% highlight shell %}
+```shell
 ------------------------------------------------------------
 Server listening on UDP port 48000
 Binding to local address 230.0.5.241
@@ -72,11 +72,11 @@ UDP buffer size: 208 KByte (default)
 [3] 1.0- 2.0 sec 128 KBytes 1.05 Mbits/sec 0.054 ms 0/ 89 (0%)
 [3] 2.0- 3.0 sec 128 KBytes 1.05 Mbits/sec 0.058 ms 0/ 89 (0%)
 [3] 0.0- 3.0 sec 386 KBytes 1.05 Mbits/sec 0.056 ms 0/ 269 (0%)
-{% endhighlight %}
+```
 
 **server 2**
 
-{% highlight shell %}
+```shell
 ------------------------------------------------------------
 Client connecting to 230.0.5.241, UDP port 48000
 Sending 1470 byte datagrams, IPG target: 11215.21 us (kalman adjust)
@@ -90,7 +90,7 @@ UDP buffer size: 208 KByte (default)
 [3] 2.0- 3.0 sec 128 KBytes 1.05 Mbits/sec
 [3] 0.0- 3.0 sec 386 KBytes 1.05 Mbits/sec
 [3] Sent 269 datagrams
-{% endhighlight %}
+```
 
 1. Did you see some UDP traffic coming in both machines? Yes? That means the operational system and network layer are working as expected. If not, too bad. I recommend taking a look at:
 

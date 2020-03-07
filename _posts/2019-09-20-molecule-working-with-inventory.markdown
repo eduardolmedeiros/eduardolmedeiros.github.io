@@ -10,17 +10,17 @@ This is could be interesting when you have to parse some inventory within the ro
   
 1) Edit the file: molecule/default/playbook.yml
 
-{% highlight yaml %}
+```yaml
     ---
     - name: Converge
       hosts: all
       roles:
         - role: my_role
-{% endhighlight %}
+```
 
 2) Add the inventory configuration into the file molecule/default/molecule.yml
 
-{% highlight yaml %}
+```yaml
     ---
     dependency:
       name: galaxy
@@ -42,11 +42,11 @@ This is could be interesting when you have to parse some inventory within the ro
       name: testinfra
       lint:
         name: flake8
-{% endhighlight %}
+```
 
 3) Create molecule/default/inventory.yml file (also support JSON, ini format)
 
-{% highlight yaml %}
+```yaml
     ---
     all:
       children:
@@ -74,4 +74,4 @@ This is could be interesting when you have to parse some inventory within the ro
                       hosts:
                         host7.domain.net:
                         host8.domain.net:
-{% endhighlight %}
+```
