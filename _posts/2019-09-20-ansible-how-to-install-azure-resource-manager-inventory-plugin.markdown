@@ -24,7 +24,7 @@ This plugin allows you to work with dynamic inventory on Azure.
 ### Install azure inventory plugin
 
 ```shell
-pip install 'ansible[azure]'
+$ pip install 'ansible[azure]'
 ```
 
 ### Setup
@@ -46,8 +46,8 @@ include_vmss_resource_groups:
 **Azure cli**
 
 ```shell
-az login
-az account set --subscription <subscription_name>
+$ az login
+$ az account set --subscription <subscription_name>
 ```
 
 ### Invoking ansible cli.
@@ -55,13 +55,13 @@ az account set --subscription <subscription_name>
 **Listing all hosts**
 
 ```shell
-ansible-inventory -i azure_rm.yml --list all
+$ ansible-inventory -i azure_rm.yml --list all
 ```
 
 **Pinging**
 
 ```shell
-ansible all -m ping -i azure_rm.yml -u <ansible_user> --key-file "<ansible_user_ssh_key_file>"
+$ ansible all -m ping -i azure_rm.yml -u <ansible_user> --key-file "<ansible_user_ssh_key_file>"
 ```
 
 If you did not get any error, it's working properly.

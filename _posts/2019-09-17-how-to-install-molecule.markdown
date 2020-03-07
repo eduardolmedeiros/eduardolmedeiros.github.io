@@ -49,25 +49,25 @@ Use pip to install the virtualenv Python module. This will ensure that your pack
 We will use pip to create a virtual environment and install additional packages.
 
 ```shell
-python -m pip install virtualenv
+$ python -m pip install virtualenv
 ```
 
 Next, let's create and activate the virtual environment:
 
 ```shell
-python -m virtualenv molecule
+$ python -m virtualenv molecule
 ```
 
 Activate it to ensure that your actions are restricted to that environment:
 
 ```shell
-source molecule/bin/activate
+$ source molecule/bin/activate
 ```
 
 Install molecule and docker using pip:
 
 ```shell
-python -m pip install molecule docker
+$ python -m pip install molecule docker
 ```
 
 Next post I will explain how molecule works.

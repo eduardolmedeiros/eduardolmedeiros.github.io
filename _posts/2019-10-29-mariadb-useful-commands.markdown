@@ -8,17 +8,17 @@ categories: mariadb db mysql
 ### Checking current max connections.
 
 ```sql
-show status where `variable_name` = 'Max_used_connections';
+MariaDB [(none)]> show status where `variable_name` = 'Max_used_connections';
 ```
 
 ### Checking threads connect
 
 ```sql
-show status where `variable_name` = 'Threads_connected';
+MariaDB [(none)]> show status where `variable_name` = 'Threads_connected';
 ```
 
 ### Checking current process
 
 ```sql
-show full processlist;
+MariaDB [(none)]> show full processlist;
 ```

@@ -32,6 +32,6 @@ MariaDB [(none)]> show global variables like 'thread_pool_max_threads';
 ### Checking the current status:
 
 ```shell
-show status where `variable_name` = 'Max_used_connections';
-show status where `variable_name` = 'Threads_connected';
+MariaDB [(none)]> show status where `variable_name` = 'Max_used_connections';
+MariaDB [(none)]> show status where `variable_name` = 'Threads_connected';
 ```
