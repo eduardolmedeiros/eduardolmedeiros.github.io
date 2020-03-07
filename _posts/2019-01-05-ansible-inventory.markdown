@@ -60,15 +60,15 @@ test-db-002.mydomain.com
 ```yaml
 ---
 all:
-    children:
-        webserver:
-          hosts:
-            test-web-001.mydomain.com:
-            test-web-002.mydomain.com:
-        database:
-          hosts:
-            test-db-001.mydomain.com:
-            test-db-002.mydomain.com:
+  children:
+    webserver:
+      hosts:
+        test-web-001.mydomain.com:
+        test-web-002.mydomain.com:
+    database:
+      hosts:
+        test-db-001.mydomain.com:
+        test-db-002.mydomain.com:
 ```
 
 ### JSON format

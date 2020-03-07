@@ -11,8 +11,8 @@ The configuration for ansible vault key password file is defined within the file
 
 ```yaml
 provisioner:
-name: ansible
-config_options:
+  name: ansible
+  config_options:
     defaults:
       vault_password_file: ${HOME}/.ansible/.vault
 ```
