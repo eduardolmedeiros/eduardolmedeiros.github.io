@@ -25,9 +25,9 @@ There are many ways to setup the inventory file on your controller machine.
 
 ```
 | level | path | note |
-| --- | --- | --- |
-| root | /etc/ansible/hosts | |
-| user | $USER/.ansible/hosts | recommended |
+| ---   | --- | --- |
+| root  | /etc/ansible/hosts | |
+| user  | $USER/.ansible/hosts | recommended |
 ```
 
 If you are using a different path, you must to specify the inventory file using the parameter -i.
@@ -40,24 +40,24 @@ For this example, we gonna create two groups with two hosts inside in each.
 
 ```
 | group | hosts |
-| --- | --- |
+| ---   | ---   |
 | webserver | test-web-001.mydomain.com, test-web-002.mydomain.com |
-| database | test-db-001.mydomain.com, test-db-002.mydomain.com |
+| database  | test-db-001.mydomain.com, test-db-002.mydomain.com |
 ```
 
 ### INI format
 ```
-    [webserver]
-    test-web-001.mydomain.com
-    test-web-002.mydomain.com
+[webserver]
+test-web-001.mydomain.com
+test-web-002.mydomain.com
      
-    [database]
-    test-db-001.mydomain.com
-    test-db-002.mydomain.com
+[database]
+test-db-001.mydomain.com
+test-db-002.mydomain.com
 ```
 
 ### YAML format
-{% highlight yaml %}
+```yaml
 ---
 all:
     children:
@@ -69,7 +69,7 @@ all:
           hosts:
             test-db-001.mydomain.com:
             test-db-002.mydomain.com:
-{% endhighlight %}
+```
 
 ### JSON format
 {% highlight json %}
