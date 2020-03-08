@@ -5,9 +5,9 @@ date: '2020-03-08 01:15:00'
 categories: rundeck api
 ---
 
-# rundeck api
+# Rundeck api
 
-Rundeck is an open-source automation service with a web console and command-line tools.
+[Rundeck](http://www.rundeck.org) is an open-source automation service with a web console and command-line tools.
 
 In addition, what is nice about [Rundeck](http://www.rundeck.org) is that you are able to manage it via API, which is super nice for integration with other systems eg: Jenkins and so.
 
