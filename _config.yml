@@ -3,7 +3,7 @@ email: eduardo@dotmac.com.br
 description: >- # this means to ignore newlines until "baseurl:"
   System Engineer.
   This is my blog. Here l write some stuff about automation, cloud, containers, devops, linux, and orchestration.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+#baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://eduardolmedeiros.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /archives/:year/:month/:day/:title.html
 twitter_username: xedux
