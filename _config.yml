@@ -14,6 +14,7 @@ markdown: kramdown
 remote_theme: thelehhman/plainwhite-jekyll
 plugins:
   - jekyll-feed
+future: true
 
 # Theme settings
 plainwhite:
