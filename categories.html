@@ -3,17 +3,9 @@ layout: default
 permalink: /categories/
 title: Archives by categories
 ---
+
 <h1 id="posts-label">Archives by categories</h1>
-<ul id="archive-categories">
-  {% assign orderedCategories = site.categories | sort: '' %}
-  {% for category in orderedCategories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <li>
-      <a href="#{{ category_name | replace: ' ', '-' }}">{{category_name}}</a>
-    </li>
-  {% endfor %}
-</ul>
-<hr />
+
 <div id="archives">
 {% assign orderedCategories = site.categories | sort: '' %}
 {% for category in orderedCategories %}
