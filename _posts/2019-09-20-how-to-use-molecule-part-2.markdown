@@ -7,8 +7,6 @@ categories: ansible molecule automation
 
 On this post, we gonna coverage some useful commands for molecule.
 
->*Warning:* These settings are based on molecule version 2, it might be changed on version 3.
-
 ### Converge will execute the sequence necessary to converge the instances.
 
 ```shell
