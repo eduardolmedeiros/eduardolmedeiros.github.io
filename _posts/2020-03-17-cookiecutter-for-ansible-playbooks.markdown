@@ -5,6 +5,8 @@ date: '2020-03-17 18:00:00'
 categories: ansible cookiecutter
 ---
 
+## Introduction
+
 I do hate doing repetitive tasks, for instance creating playbooks scaffolds and so one.
 
 Well, I've started my journey looking for some tool that provides such a way to create project templates, then I've found [Cookiecutter](https://cookiecutter.readthedocs.io/) project.
@@ -13,13 +15,13 @@ Serious. This project is awesome and you should have a look at that, especially 
 
 Let's have a look at my ansible-playbook cookiecutter template.
 
-# Cookiecutter installation
+## Cookiecutter installation
 
 ```shell
 $ pip install cookiecutter
 ```
 
-# Generate a new Cookiecutter template layout
+## Generate a new Cookiecutter template layout
 
 ```shell
 cookiecutter gh:eduardolmedeiros/cookiecutter-ansible-playbook
@@ -27,12 +29,12 @@ cookiecutter gh:eduardolmedeiros/cookiecutter-ansible-playbook
 
 The command above gonna pull the source files from my [github repository](https://github.com/eduardolmedeiros/cookiecutter-ansible-playbook) and generate the output files.
 
-# Wizard menu
+### Wizard menu
 
 After running the cookiecutter command, a wizard menu will popup.
 This information came from `cookiecutter.json` file.
 
-```
+```shell
 $ cookiecutter gh:eduardolmedeiros/cookiecutter-ansible-playbook
 full_name [Your name]: Eduardo Medeiros
 email [Your address email (eq. you@example.com)]: eduardo@dotmac.com.br
@@ -53,9 +55,9 @@ Select license:
 Choose from 1, 2, 3, 4 [1]: 1
 ```
 
-# Done! Now let's have a look at output files (project folder)
+### Done! Now let's have a look at output files (project folder)
 
-```.
+```shell
 ├── README.MD
 ├── group_vars
 │   └── all.yml
@@ -70,8 +72,11 @@ Choose from 1, 2, 3, 4 [1]: 1
     └── requirements.yml
 ```
 
-# A little bit more about cookiecutter-ansible-playbook
+## A little bit more about cookiecutter-ansible-playbook
 
 * Ansible Playbook scaffold
 * Vagrant support
 * Dynamic settings defined by wizard menu
+
+
+That's all, see you next time.
