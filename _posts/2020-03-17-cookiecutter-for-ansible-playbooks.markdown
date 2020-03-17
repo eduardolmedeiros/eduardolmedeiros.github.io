@@ -24,7 +24,7 @@ $ pip install cookiecutter
 ## Generate a new Cookiecutter template layout
 
 ```shell
-cookiecutter gh:eduardolmedeiros/cookiecutter-ansible-playbook
+$ cookiecutter gh:eduardolmedeiros/cookiecutter-ansible-playbook
 ```
 
 The command above gonna pull the source files from my [github repository](https://github.com/eduardolmedeiros/cookiecutter-ansible-playbook) and generate the output files.
