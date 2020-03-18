@@ -7,7 +7,7 @@ categories: ansible cookiecutter
 
 ## Introduction
 
-I do hate doing repetitive tasks, for instance creating playbooks scaffolds and so one.
+It's super annoying doing repetitive tasks, for instance creating playbooks scaffolds and so one.
 
 Well, I've started my journey looking for some tool that provides such a way to create project templates, then I've found [Cookiecutter](https://cookiecutter.readthedocs.io/) project.
 
