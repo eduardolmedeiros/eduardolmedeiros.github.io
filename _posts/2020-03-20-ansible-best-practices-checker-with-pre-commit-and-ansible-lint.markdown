@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible: Best practices checker with pre-commit and ansible-lint
+title: 'Ansible: Best practices checker with pre-commit and ansible-lint'
 date: '2020-03-20 22:00:00'
 categories: ansible pre-commit
 ---
