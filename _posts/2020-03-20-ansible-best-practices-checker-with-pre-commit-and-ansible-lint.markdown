@@ -19,7 +19,6 @@ Git hook scripts are useful for identifying simple issues before submission to c
 
 [ansible-lint](https://github.com/ansible/ansible-lint) it's a tool that checks playbooks for practices and behavior that could potentially be improved.
 
-Let's install pre-commit with ansible-lint support.
 
 ## Install pre-commit
 
