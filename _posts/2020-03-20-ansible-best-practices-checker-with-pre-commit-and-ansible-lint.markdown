@@ -19,9 +19,7 @@ Git hook scripts are useful for identifying simple issues before submission to c
 
 [ansible-lint](https://github.com/ansible/ansible-lint) it's a tool that checks playbooks for practices and behavior that could potentially be improved.
 
-
 Let's install pre-commit with ansible-lint support.
-
 
 ## Install pre-commit
 
@@ -29,7 +27,7 @@ Let's install pre-commit with ansible-lint support.
 pip install pre-commit
 ```
 
-### Enabling ansible-lint pre-commit
+### Enabling ansible-lint within pre-commit
 
 Create a pre-commit configuration file:
 
@@ -61,7 +59,6 @@ Ansible-lint.............................................................Passed
 ```
 
 or just type:
-
 ```
 $ git commit 
 ```
@@ -70,7 +67,7 @@ Great! right?
 
 Mean's my ansible project is fine and no errors found.
 
-Now let's see a sample for error on ansible side:
+Now let's see an output error sample:
 
 ```
 git commit -m "testing hook" -a
