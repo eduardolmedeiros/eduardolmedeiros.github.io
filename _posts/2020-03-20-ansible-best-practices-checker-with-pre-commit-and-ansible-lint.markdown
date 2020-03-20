@@ -31,7 +31,7 @@ pip install pre-commit
 
 ### Enabling ansible-lint pre-commit
 
-1.  Create a pre-commit configuration file:
+Create a pre-commit configuration file:
 
 `.pre-commit-config.yaml`
 
@@ -45,7 +45,7 @@ repos:
       files: \.(yaml|yml)$
 ```
 
-2. Enable pre-commit for your git repository
+Enable pre-commit for your git repository
 
 ```
 $ pre-commit install
