@@ -34,7 +34,7 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: motown2-proxy.molecule.local
+  - name: proxy.molecule.local
     image: centos:7
     privileged: true
     volume_mounts:
