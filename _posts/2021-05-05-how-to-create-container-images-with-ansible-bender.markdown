@@ -78,7 +78,7 @@ $ .env/bin/pip install ansible selinux ansible-bender
 $ source .env/bin/activate
 ```
 
-> In my case, I will take the option 2, because I would like to try out the latest version.
+>In my case, I will take the option 2, because I would like to try out the latest version.
 
 ### Let's try out
 
@@ -95,7 +95,7 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
       target_image:
         name: "docker.io/emedeiros/azcopy:{{ azcopy_version }}"
         labels:
-          version: "{{ azcopy_version }}"
+          version: "\{{ azcopy_version \}}"
         cmd: "{{ azcopy_bin_path }}/azcopy"
     azcopy_pkg_url: https://azcopyvnext.azureedge.net/release20210415/azcopy_linux_amd64_10.10.0.tar.gz
     azcopy_bin_path: /usr/local/bin
