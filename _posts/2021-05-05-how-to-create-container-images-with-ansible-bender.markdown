@@ -78,7 +78,7 @@ $ .env/bin/pip install ansible selinux ansible-bender
 $ source .env/bin/activate
 ```
 
-In my case, I will take the option 2, because I would like to try out the latest version.
+> In my case, I will take the option 2, because I would like to try out the latest version.
 
 ### Let's try out
 
@@ -339,8 +339,6 @@ playbook sample:
 ```yaml
 ---
 - hosts: all
-  collections: 
-    - eduardolmedeiros.azcopy_collections
   vars:
     ansible_bender:
       base_image: "docker.io/library/centos:8"
