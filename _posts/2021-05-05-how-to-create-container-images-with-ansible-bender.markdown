@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to create container images with ansible-bender
-date: '2021-05-05 14:00:00'
+date: '2021-05-05 14:15:00'
 categories: ansible
 ---
 
@@ -84,7 +84,7 @@ In my case, I will take the option 2, because I would like to try out the latest
 
 In this example, I'll create a simple image with [azcopy](https://github.com/Azure/azure-storage-azcopy) (Azure Storage data transfer utility) tooling installed.
 
-1. Lets create a playbook.yml file
+#### 1. Lets create a playbook.yml file
 
 ```yaml
 ---
@@ -132,7 +132,7 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
         msg: "{{ version.stdout_lines }}"
 ```       
 
-2. Build a container image on top of that.
+#### 2. Build a container image on top of that.
 
 ```shell
 ansible-bender build ./playbook.yml --no-cache
@@ -181,7 +181,7 @@ Image 'docker.io/emedeiros/azcopy:10.10.0' was built successfully \o/
 ```
 
 
-3. Check the logs 
+#### 3. Check the logs 
 
 ```shell
 $ ansible-bender list-builds
@@ -220,7 +220,7 @@ PLAY RECAP *********************************************************************
 docker-io-emedeiros-azcopy-10-10-0-20210505-124806108269-cont : ok=5    changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0    
 ```
 
-4. Inspecting the image
+#### 4. Inspecting the image
 
 ```shell
 $ ansible-bender inspect 
@@ -295,7 +295,7 @@ verbose: false
 verbose_layer_names: null
 ```
 
-5. Testing the image
+#### 5. Testing the image
 
 ```shell
 $ podman run emedeiros/azcopy:10.10.0
@@ -318,7 +318,7 @@ Usage:
 ...
 ```
 
-6. Push your image to your repo (optional)
+#### 6. Push your image to your repo (optional)
 
 ```shell
 $ podman login docker.io
@@ -333,6 +333,8 @@ $ podman push docker.io/emedeiros/azcopy:10.10.0
 ```shell
 ansible-galaxy role install eduardolmedeiros.azcopy -p roles
 ```
+
+playbook sample:
 
 ```yaml
 ---
