@@ -106,7 +106,7 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
   tasks:
     - name: Install utils
       package:
-        name: "{{ item }}"
+        name: {% raw %}"{{ item }}"{% endraw %}
         state: present
       loop:
         - unzip
