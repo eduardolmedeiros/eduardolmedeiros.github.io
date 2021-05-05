@@ -95,8 +95,8 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
       target_image:
         name: "docker.io/emedeiros/azcopy:{{ azcopy_version }}"
         labels:
-          version:  {% raw %}"{{ azcopy_version }}"{% endraw %}
-        cmd: "{{ azcopy_bin_path }}/azcopy"
+          version: {% raw %}"{{ azcopy_version }}"{% endraw %}
+        cmd: {% raw %}"{{ azcopy_bin_path }}/azcopy"{% endraw %}
     azcopy_pkg_url: https://azcopyvnext.azureedge.net/release20210415/azcopy_linux_amd64_10.10.0.tar.gz
     azcopy_bin_path: /usr/local/bin
     azcopy_version: 10.10.0
@@ -114,22 +114,22 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
     - name: "Install azcopy {{ azcopy_version }} package"
       unarchive:
         remote_src: true
-        src: "{{ azcopy_pkg_url }}"
-        dest: "{{ azcopy_bin_path }}"
+        src: {% raw %}"{{ azcopy_pkg_url }}"{% endraw %}
+        dest: {% raw %}"{{ azcopy_bin_path }}"{% endraw %}
         extra_opts: [--strip-components=1]
 
     - name: Register current version installed
-      command: "{{ azcopy_bin_path }}/azcopy --version"
+      command: {% raw %}"{{ azcopy_bin_path }}/azcopy --version"{% endraw %}
       register: "version"    
 
     - name: Check installation
       fail:
-        msg: "azcopy {{ azcopy_version }} installation failure"
+        msg: {% raw %}"azcopy {{ azcopy_version }} installation failure"{% endraw %}
       when: version.stdout.find(azcopy_version) == -1
 
     - name: Display version installed
       debug:
-        msg: "{{ version.stdout_lines }}"
+        msg: {% raw %}"{{ version.stdout_lines }}"{% endraw %}
 ```       
 
 #### 2. Build a container image on top of that.
