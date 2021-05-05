@@ -95,7 +95,7 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
       target_image:
         name: "docker.io/emedeiros/azcopy:{{ azcopy_version }}"
         labels:
-          version: "\{{ azcopy_version \}}"
+          version:  {% raw %}"{{ azcopy_version }}"{% endraw %}
         cmd: "{{ azcopy_bin_path }}/azcopy"
     azcopy_pkg_url: https://azcopyvnext.azureedge.net/release20210415/azcopy_linux_amd64_10.10.0.tar.gz
     azcopy_bin_path: /usr/local/bin
