@@ -63,13 +63,13 @@ $ dnf install buildah
 
 ### Installing Ansible Bender
 
-Option 1. Easy way - Downstream packages (stable versions)
+Option 1. Easy way - stable version delivered by the distribution (good for production environment)
 
 ```shell
 $ dnf install ansible-bender
 ```
 
-Option 2. Setup using python pip (upstream packages/latest versions)
+Option 2. Setup using python pip (latest versions)
 
 ```shell
 $ python3 -m virtualenv .env
@@ -77,6 +77,8 @@ $ .env/bin/pip install --upgrade pip
 $ .env/bin/pip install ansible selinux ansible-bender
 $ source .env/bin/activate
 ```
+
+>If you prefer to not use virtualenv, just install by running `pip install` command.
 
 >In my case, I will take the option 2, because I would like to try out the latest version.
 
@@ -93,7 +95,7 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
     ansible_bender:
       base_image: "docker.io/library/python:3-alpine"
       target_image:
-        name: {% raw %}"docker.io/emedeiros/azcopy:{{ azcopy_version }}"{% endraw %}
+        name: {% raw %} "docker.io/emedeiros/azcopy:{{ azcopy_version }}"{% endraw %}
         labels:
           version: {% raw %}"{{ azcopy_version }}"{% endraw %}
         cmd: {% raw %}"{{ azcopy_bin_path }}/azcopy"{% endraw %}
