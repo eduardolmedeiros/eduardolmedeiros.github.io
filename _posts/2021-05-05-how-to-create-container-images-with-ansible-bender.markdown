@@ -93,7 +93,7 @@ In this example, I'll create a simple image with [azcopy](https://github.com/Azu
     ansible_bender:
       base_image: "docker.io/library/python:3-alpine"
       target_image:
-        name: "docker.io/emedeiros/azcopy:{{ azcopy_version }}"
+        name: {% raw %}"docker.io/emedeiros/azcopy:{{ azcopy_version }}"{% endraw %}
         labels:
           version: {% raw %}"{{ azcopy_version }}"{% endraw %}
         cmd: {% raw %}"{{ azcopy_bin_path }}/azcopy"{% endraw %}
